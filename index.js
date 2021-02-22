@@ -1,10 +1,10 @@
 const canvas = document.getElementById("gameArea");
 const ctx = canvas.getContext("2d");
 
-let x = 100;
-let y = 100;
-let radius = 45;
-let speed = 8;
+let x = 430;
+let y = 360;
+let radius = 40;
+let speed = 10;
 
 let upPressed = false;
 let downPressed = false;
@@ -52,18 +52,18 @@ function inputs (){
 }
 
 function drawGreenBlob(){
-    ctx.fillStyle = "green";
+    ctx.fillStyle = "greenyellow";
     if (upPressed){
-        ctx.fillStyle = "greenyellow";
+        ctx.fillStyle = "magenta";
     }
     if (downPressed){
-        ctx.fillStyle = "greenyellow";
+        ctx.fillStyle = "magenta";
     }
     if (leftPressed){
-        ctx.fillStyle = "greenyellow";
+        ctx.fillStyle = "magenta";
     }
     if (rightPressed){
-        ctx.fillStyle = "greenyellow";
+        ctx.fillStyle = "magenta";
     }
     ctx.beginPath();
     ctx.arc(x, y, radius, 0, Math.PI * 2);
@@ -116,6 +116,5 @@ function keyUp(event){
         rightPressed = false;
     }
 }
-
 
 drawGame();
