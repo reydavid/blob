@@ -54,16 +54,16 @@ function inputs (){
 function drawGreenBlob(){
     ctx.fillStyle = "greenyellow";
     if (upPressed){
-        ctx.fillStyle = "magenta";
+        ctx.fillStyle = "blue";
     }
     if (downPressed){
         ctx.fillStyle = "magenta";
     }
     if (leftPressed){
-        ctx.fillStyle = "magenta";
+        ctx.fillStyle = "yellow";
     }
     if (rightPressed){
-        ctx.fillStyle = "magenta";
+        ctx.fillStyle = "red";
     }
     ctx.beginPath();
     ctx.arc(x, y, radius, 0, Math.PI * 2);
